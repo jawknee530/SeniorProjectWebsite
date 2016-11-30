@@ -1,0 +1,14 @@
+<article class="sidebar">
+  <h1 class="sidebar-title">Popular BitTorrent Clients</h1>
+  <p class="sidebar-body">Selecting the images will direct you to their respective sites.</p>
+  <div class="sidebar-body">
+    <% if (clients.length > 0) { %>
+    <% for (i=0; i< clients.length; i++) { %>
+      <a href="<%= sites[i] %>">
+        <img src="/images/clients/<%= clients[i] %>" alt="Client <%= i %>" style="width:96px;height:96px;">
+      </a>
+    <% } %>
+    <% } %>
+  </div>
+</article>
+

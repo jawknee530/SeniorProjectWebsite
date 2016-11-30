@@ -1,0 +1,4 @@
+{
+  "images": ["vuze.jpg","utorrent.jpg","transmission.jpg","qbittorrent.jpg","deluge.jpg","bitcomet.jpg"],
+  "sites": ["http://www.vuze.com/","http://www.utorrent.com/intl/en/","https://transmissionbt.com/","http://www.qbittorrent.org/index.php","http://deluge-torrent.org/","https://www.bitcomet.com/en"]
+}

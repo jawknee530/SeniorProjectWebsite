@@ -1,0 +1,65 @@
+<div class="maincontent">
+
+  <article class="article">
+    <h1 class="article-title">How do I download a file?</h1>
+      <p>Downloading a file via BitTorrent is a simple three step process.</p>
+      <ul>
+        <li>Install a BitTorrent client (several options to the right)</li>
+        <li>Download and open a .torrent file in the client</li>
+        <li>Wait</li>
+      </ul>
+      <p>The torrent tracker and client will work together to connect you to as many peers as possible. The client will download portions of the desired data from these peers and assemble them for you. Once you have all of the data the file will read 100% and you're all set.</p>
+  </article><!-- article -->
+
+  <article class="article">
+    <h1 class="article-title">What if I want to create a Torrent?</h1>
+      <p>Say you want to create your own torrent in order to share your legal content with some friends. To do so you need to create a .torrent and share this file with those friends. The .torrent file needs to be associated with a tracker in order to facilitate the finding of peers.</p>
+      <p>Most clients offer a way of creating a .torrent file and below are step by step instructions for doing so using qBitTorrent and using my simple torrent tracker.</p>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+    <li data-target="#myCarousel" data-slide-to="4"></li>
+    <li data-target="#myCarousel" data-slide-to="5"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+  
+    <% if (instructs.length > 0) { %>
+        <div class="item active">
+          <img src="/images/instructions/<%= instructs[0] %>" alt="">
+          <div class="carousel-caption">
+            <p><%= text[0] %></p>
+          </div>
+        </div>
+        
+        <% for (i=1; i< instructs.length; i++) { %>
+        <div class="item">
+          <img src="/images/instructions/<%= instructs[i] %>" alt="">
+          <div class="carousel-caption">
+            <p><%= text[i] %></p>
+          </div>
+        </div>
+        <% } %>
+    <% } %>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+  </article><!-- article -->
+
+</div>
+

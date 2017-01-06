@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 
-router.get('/instructions', function(req, res) {
+router.get('/info', function(req, res) {
   var clients = req.app.get('clientData');
   var clientPhotos = clients.images;
   var clientAddresses = clients.sites;
@@ -11,13 +11,13 @@ router.get('/instructions', function(req, res) {
   var instructPhotos = instructions.images;
   var instructText = instructions.text;
 
-  res.render('instructions', {
-    pageTitle: 'Instructions',
+  res.render('info', {
+    pageTitle: 'Info',
     clients: clientPhotos,
     sites: clientAddresses,
     instructs: instructPhotos,
     text: instructText,
-    pageID: 'instructions'
+    pageID: 'info'
   });
 
 

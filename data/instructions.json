@@ -1,3 +1,4 @@
 {
-  "images": ["one.jpg","two.jpg","three.jpg","four.jpg","five.jpg","six.jpg"]
+  "images": ["one.jpg","two.jpg","three.jpg","four.jpg","five.jpg","six.jpg"],
+  "text": ["","First select Torrent Creator from the Tools menu.","In the tool add \"http://52.43.231.231/announce.php\" to the \"Tracker URLs:\" field and select \"Add file\"","Navigate to the file you want to share and select it.","Select \"Create and save...\" in order to create the .torrent file","Open the .torrent file in your client and it will begin seeding."]
 }

@@ -2,20 +2,26 @@
 
   <article class="article">
     <h1 class="article-title">How do I download a file?</h1>
-      <p>"BitTorrent is a communications protocol of peer-to-peer file sharing ("P2P") which is used to distribute data and electronic files over the Internet. BitTorrent is one of the most common protocols for transferring large files, such as digital video files containing TV shows or video clips or digital audio files containing songs. Peer-to-peer networks have been estimated to collectively account for approximately 43% to 70% of all Internet traffic (depending on location) as of February 2009. In November 2004, BitTorrent was responsible for 25% of all Internet traffic. As of February 2013, BitTorrent was responsible for 3.35% of all worldwide bandwidth, more than half of the 6% of total bandwidth dedicated to file sharing.</p>
-      <p>To send or receive files, a person uses a BitTorrent client on his or her Internet-connected computer. A BitTorrent client is a computer program that implements the BitTorrent protocol. Popular clients include μTorrent, Xunlei, Transmission, qBittorrent, Vuze, Deluge, BitComet and Tixati. BitTorrent trackers provide a list of files available for transfer, and allow the client to find peer users known as seeds who may transfer the files.</p>
-      <p>Programmer Bram Cohen, a former University at Buffalo student, designed the protocol in April 2001 and released the first available version on 2 July 2001, and the most recent version in 2013. BitTorrent clients are available for a variety of computing platforms and operating systems including an official client released by BitTorrent, Inc.</p>
-      <p>As of 2013, BitTorrent has 15–27 million concurrent users at any time. As of January 2012, BitTorrent is utilized by 150 million active users. Based on this figure, the total number of monthly BitTorrent users may be estimated to more than a quarter of a billion."</p>
+      <p>Downloading a file via BitTorrent is a simple three step process.</p>
+      <ul>
+        <li>Install a BitTorrent client (several options to the right)</li>
+        <li>Download and open a .torrent file in the client</li>
+        <li>Wait</li>
+      </ul>
+      <p>The torrent tracker and client will work together to connect you to as many peers as possible. The client will download portions of the desired data from these peers and assemble them for you. Once you have all of the data the file will read 100% and you're all set.</p>
   </article><!-- article -->
 
   <article class="article">
     <h1 class="article-title">What if I want to create a Torrent?</h1>
-    <% if (instructs.length > 0) { %>
-    <% for (i=0; i< instructs.length; i++) { %>
-        <img src="/images/instructions/<%= instructs[i] %>" alt="Client <%= i %>" style="height:512px;" class="img-responsive">
-    <% } %>
-    <% } %>
-      <p>"The use of the BitTorrent protocol for sharing of copyrighted content generated a variety of novel legal issues. While the technology and related platforms are legal in many jurisdictions, law enforcement and prosecutorial agencies are attempting to address this avenue of copyright infringement. Notably, the use of BitTorrent in connection with copyrighted material may make the issuers of the BitTorrent file, link or metadata liable as an infringing party under some copyright laws. Similarly, the use of BitTorrent to procure illegal materials could potentially create liability for end users as an accomplice."</p>
+      <p>Say you want to create your own torrent in order to share your legal content with some friends. To do so you need to create a .torrent and share this file with those friends. The .torrent file needs to be associated with a tracker in order to facilitate the finding of peers.</p>
+      <p>Most clients offer a way of creating a .torrent file and below are step by step instructions for doing so using qBitTorrent and using my simple torrent tracker.</p>
+      <% if (instructs.length > 0) { %>
+      <% for (i=0; i< instructs.length; i++) { %>
+      <p class="text-center"><%= text[i] %></p>
+          <img src="/images/instructions/<%= instructs[i] %>" alt="Client <%= i %>" style="height:512px;" class="img-responsive">
+          <hr style="height:5px;">
+      <% } %>
+      <% } %>
   </article><!-- article -->
 
 </div>
